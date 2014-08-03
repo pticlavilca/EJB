@@ -1,0 +1,300 @@
+
+Halion@HALION-PC /D/projects/java/EJB
+$ vi src/main/java/com/jpaul/ejb/App.java
+
+Halion@HALION-PC /D/projects/java/EJB
+$ mvn compile
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building EJB 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ EJB ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources,
+i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory d:\projects\java\EJB\src\main\resourc
+es
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ EJB ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. b
+uild is platform dependent!
+[INFO] Compiling 1 source file to d:\projects\java\EJB\target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.247 s
+[INFO] Finished at: 2014-08-03T03:16:44-05:00
+[INFO] Final Memory: 11M/111M
+[INFO] ------------------------------------------------------------------------
+
+Halion@HALION-PC /D/projects/java/EJB
+$ mvn package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building EJB 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ EJB ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources,
+i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory d:\projects\java\EJB\src\main\resourc
+es
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ EJB ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ EJ
+B ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources,
+i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory d:\projects\java\EJB\src\test\resourc
+es
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ EJB -
+--
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. b
+uild is platform dependent!
+[INFO] Compiling 1 source file to d:\projects\java\EJB\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ EJB ---
+[INFO] Surefire report directory: d:\projects\java\EJB\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.jpaul.ejb.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ EJB ---
+[INFO] Building jar: d:\projects\java\EJB\target\EJB-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.597 s
+[INFO] Finished at: 2014-08-03T03:16:59-05:00
+[INFO] Final Memory: 12M/85M
+[INFO] ------------------------------------------------------------------------
+
+Halion@HALION-PC /D/projects/java/EJB
+$ find
+.
+./pom.xml
+./src
+./src/main
+./src/main/java
+./src/main/java/com
+./src/main/java/com/jpaul
+./src/main/java/com/jpaul/ejb
+./src/main/java/com/jpaul/ejb/App.java
+./src/test
+./src/test/java
+./src/test/java/com
+./src/test/java/com/jpaul
+./src/test/java/com/jpaul/ejb
+./src/test/java/com/jpaul/ejb/AppTest.java
+./target
+./target/classes
+./target/classes/com
+./target/classes/com/jpaul
+./target/classes/com/jpaul/ejb
+./target/classes/com/jpaul/ejb/App.class
+./target/EJB-1.0-SNAPSHOT.jar
+./target/maven-archiver
+./target/maven-archiver/pom.properties
+./target/surefire-reports
+./target/surefire-reports/com.jpaul.ejb.AppTest.txt
+./target/surefire-reports/TEST-com.jpaul.ejb.AppTest.xml
+./target/test-classes
+./target/test-classes/com
+./target/test-classes/com/jpaul
+./target/test-classes/com/jpaul/ejb
+./target/test-classes/com/jpaul/ejb/AppTest.class
+
+Halion@HALION-PC /D/projects/java/EJB
+$ java -cp target/EJB-1.0-SNAPSHOT.jar com.jpaul.ejb.App
+Hello World EJB
+
+Halion@HALION-PC /D/projects/java/EJB
+$ find
+.
+./pom.xml
+./src
+./src/main
+./src/main/java
+./src/main/java/com
+./src/main/java/com/jpaul
+./src/main/java/com/jpaul/ejb
+./src/main/java/com/jpaul/ejb/App.java
+./src/test
+./src/test/java
+./src/test/java/com
+./src/test/java/com/jpaul
+./src/test/java/com/jpaul/ejb
+./src/test/java/com/jpaul/ejb/AppTest.java
+./target
+./target/classes
+./target/classes/com
+./target/classes/com/jpaul
+./target/classes/com/jpaul/ejb
+./target/classes/com/jpaul/ejb/App.class
+./target/EJB-1.0-SNAPSHOT.jar
+./target/maven-archiver
+./target/maven-archiver/pom.properties
+./target/surefire-reports
+./target/surefire-reports/com.jpaul.ejb.AppTest.txt
+./target/surefire-reports/TEST-com.jpaul.ejb.AppTest.xml
+./target/test-classes
+./target/test-classes/com
+./target/test-classes/com/jpaul
+./target/test-classes/com/jpaul/ejb
+./target/test-classes/com/jpaul/ejb/AppTest.class
+
+Halion@HALION-PC /D/projects/java/EJB
+$ git init
+Initialized empty Git repository in d:/projects/java/EJB/.git/
+
+Halion@HALION-PC /D/projects/java/EJB (master)
+$ ls
+pom.xml  src  target
+
+Halion@HALION-PC /D/projects/java/EJB (master)
+$ git remote add origin git@github.com:pticlavilca/EJB.git
+
+Halion@HALION-PC /D/projects/java/EJB (master)
+$ mvn clean
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building EJB 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ EJB ---
+[INFO] Deleting d:\projects\java\EJB\target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.290 s
+[INFO] Finished at: 2014-08-03T03:19:37-05:00
+[INFO] Final Memory: 5M/86M
+[INFO] ------------------------------------------------------------------------
+
+Halion@HALION-PC /D/projects/java/EJB (master)
+$ find
+.
+./.git
+./.git/config
+./.git/description
+./.git/HEAD
+./.git/hooks
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/hooks/post-commit.sample
+./.git/hooks/post-receive.sample
+./.git/hooks/post-update.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/pre-commit.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/update.sample
+./.git/info
+./.git/info/exclude
+./.git/objects
+./.git/objects/info
+./.git/objects/pack
+./.git/refs
+./.git/refs/heads
+./.git/refs/tags
+./pom.xml
+./src
+./src/main
+./src/main/java
+./src/main/java/com
+./src/main/java/com/jpaul
+./src/main/java/com/jpaul/ejb
+./src/main/java/com/jpaul/ejb/App.java
+./src/test
+./src/test/java
+./src/test/java/com
+./src/test/java/com/jpaul
+./src/test/java/com/jpaul/ejb
+./src/test/java/com/jpaul/ejb/AppTest.java
+
+Halion@HALION-PC /D/projects/java/EJB (master)
+$ git remote -v
+origin  git@github.com:pticlavilca/EJB.git (fetch)
+origin  git@github.com:pticlavilca/EJB.git (push)
+
+Halion@HALION-PC /D/projects/java/EJB (master)
+$ git push -origin master
+error: unknown switch `o'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    --delete              delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --recurse-submodules[=<check>]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+
+
+Halion@HALION-PC /D/projects/java/EJB (master)
+$ git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       pom.xml
+#       src/
+nothing added to commit but untracked files present (use "git add" to track)
+
+Halion@HALION-PC /D/projects/java/EJB (master)
+$ git add --all
+
+Halion@HALION-PC /D/projects/java/EJB (master)
+$ git commit
+[master (root-commit) 981e532] excelenexcelentt
+ 3 files changed, 69 insertions(+)
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/jpaul/ejb/App.java
+ create mode 100644 src/test/java/com/jpaul/ejb/AppTest.java
+
+Halion@HALION-PC /D/projects/java/EJB (master)
+$ git push -u origin master
+Counting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (16/16), 1.43 KiB | 0 bytes/s, done.
+Total 16 (delta 0), reused 0 (delta 0)
+To git@github.com:pticlavilca/EJB.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Halion@HALION-PC /D/projects/java/EJB (master)
+$
